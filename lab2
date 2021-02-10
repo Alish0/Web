@@ -1,0 +1,160 @@
+**********FACEBOOK*************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+
+            <div class="section-wrapper">
+
+                <div class="section-wrapper-left">
+                    <div class="section-title">
+                        <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook">
+                    </div>
+                    <div class="section-text">
+                        Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.
+                    </div>
+                </div>
+                <div class="section-wrapper-right">
+                    <form>
+                        <div class="section-wrapper-input1">
+                            <input type="text" placeholder="Электронный адрес или номер телефона">
+                        </div>
+                        <div class="section-wrapper-input2">
+                            <input type="text" placeholder="Пароль">
+                        </div>
+                        <div class="section-button1">
+                            <input type="button" value="Вход">
+                        </div>
+                        <div class="section-zabyl">
+                            <a href="#"> Забыли пароль? </a>
+                        </div>
+                        <div class="section-button2">
+                            <input type="button" value="Создать аккаунт">
+                        </div>
+                    </form>
+                    <div class="section-create">
+                        <p> <span> Создать Страницу </span> знаменитости, музыкальной группы или компании.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
+
+**********CSS*************
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin : 0;
+    padding : 0;
+}
+.container{
+    max-width: 1140px;
+    margin : 0 auto;
+}
+section{
+    padding-top: 150px;
+    background: #f0f2f5;
+    padding-bottom: 175px;
+}
+.section-wrapper{
+    display : flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.section-title img{
+    width : 300px;
+}
+.section-wrapper-left{
+    max-width : 480px;
+    
+}
+.section-text{
+    font-size: 28px;
+    font-weight: 700;
+    margin-left : 30px;
+
+}
+.section-wrapper-right{
+    max-width : 400px;
+}
+.section-wrapper-input1 input,.section-wrapper-input2 input{
+    width : 95%;
+    margin :0 auto;
+    padding : 14px 16px;
+    border-radius: 6px;
+    outline: none;
+    margin-bottom: 15px;
+    border : 1px solid #ccc;
+    
+}
+.section-button1 input{
+    width : 95%;
+    margin :0 auto;
+    background-color: #1877f2;    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+    color :white;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.section-zabyl{
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 30px;
+    width : 90%;
+    margin : 0 auto;
+}
+.section-zabyl a{
+    color: #1877f2;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.section-button2{
+    padding-top : 30px;
+    text-align : center;
+}
+.section-button2 input{
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    text-align: center;
+    background-color: #42b72a;
+    color:white;
+    font-weight: 700;
+}
+.section-create{
+    text-align: center;
+    cursor: pointer;
+}
+.section-create span{
+    font-weight: 700;
+}
+form{
+    background: white;
+    padding :20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+span:hover{
+    text-decoration: underline;
+    color :red;
+}
