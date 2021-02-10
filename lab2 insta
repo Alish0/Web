@@ -1,0 +1,216 @@
+************INSTA************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+
+            <div class="section-wrapper">
+
+                <div class="section-wrapper-left">
+                    <div class="section-phone">
+                        <img src="C:\Users\Alish\Desktop\insta\telef.png" alt="telefon">
+                    </div>
+                </div>
+
+                <div class="section-wrapper-right">
+                        <div class="glava1">
+                            <form>
+                            <h1 class="ins">Instagram</h1>
+
+                                <div class="section-wrapper-input1">
+                                    <input type="text" placeholder="Номер телефона, имя пользователя или эл. адрес">
+                                </div>
+                                <div class="section-wrapper-input2">
+                                    <input type="text" placeholder="Пароль">
+                                </div>
+                                <div class="section-button1">
+                                    <input type="button" value="Войти">
+                                </div>
+                                <div class="section-ili">
+                                    <p>Или</p>
+                                </div>
+                                <div class="section-facebook">
+                                    <a href="#">Войти через Facebook</a>
+                                </div>
+                                <div class="section-zabyl">
+                                    <a href="#"> Забыли пароль? </a>
+                                </div>
+
+                            </form>
+                        </div>
+
+                        <div class="glava2">
+                            <form>
+                                <div class="section-create">
+                                    <p>У вас еще нет аккаунта? <span> Зарегистрироваться </span></p>
+                                </div>
+
+                            </form>
+
+                        </div>
+                        <div class="apps">
+                            <div class="ustanovka">
+                                <p> Установите приложение. </p>
+                            </div>
+                            <div class="suret">
+                                <div class="foto1">
+                                    <a href="https://itunes.apple.com/app/instagram/id389801252?pt=428156&ct=igweb.loginPage.badge&mt=8&vt=lo"><img src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_russian-ru.png/bfba6d0fd6bd.png" alt="foto1" ></a>
+                                </div>
+
+                                <div class="foto2">
+                                    <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb%26utm_campaign%3DloginPage%26ig_mid%3DF231BFDD-30A4-473A-AEFD-01A939AE1668%26utm_content%3Dlo%26utm_medium%3Dbadge"><img src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_russian-ru.png/4c70948c09f3.png" alt="foto2" ></a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
+
+**************CSS************
+
+*{
+    box-sizing : border-box;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+body{
+    margin : 0;
+    padding : 0;
+}
+.container{
+    max-width: 780px;
+    margin: 0 auto;
+}
+section{
+    padding-top: 150px;
+    background: white;
+    padding-bottom: 175px;
+}
+.section-wrapper{
+    display : flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.section-wrapper-left{
+
+}
+.section-phone img{
+    
+}
+.section-wrapper-right{
+    max-width : 400px;
+
+}
+.glava1{
+
+}
+.ins{
+    margin: 23px auto 39px;
+    font: inherit;
+    font-size: 43px;
+}
+.section-wrapper-input1 input,.section-wrapper-input2 input{
+    width : 95%;
+    margin :0 auto;
+    padding : 9px 16px;
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 12px;
+    border : 1px solid #ccc;
+
+}
+
+.section-button1 input{
+    width : 95%;
+    margin :0 auto;
+    background-color: rgba(var(--d69,0,149,246),.3);
+    opacity: 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    line-height: 29px;
+    padding: 0 16px;
+    color :white;
+    font-weight: 700;
+}
+.section-ili::after{    
+    content:"" ;
+    display: block;
+    background-color: rgba(var(--b38,219,219,219),1);
+    width:101px;
+    height:1px;
+
+
+}
+.section-ili::before{    
+    content:"" ;
+    display: block;
+    background-color: rgba(var(--b38,219,219,219),1);
+    width:101px;
+    height:1px;
+    
+
+}
+.section-ili{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.section-facebook{
+    color: #385185;
+    font-weight: 600;
+    text-decoration: none;
+    margin:10px;
+}
+.section-zabyl{
+    color: #385185;
+    font-weight: 600;
+    text-decoration: none;
+    
+}
+form{
+    background: white;
+    padding :20px;
+    text-align: center;
+    border-radius: 1px;
+    margin:10px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+.suret{
+    display: flex;
+}
+span:hover{
+    text-decoration: none;
+    color :blue;
+    cursor: pointer;
+}
+.ustanovka{
+    text-align: center;
+}
+.foto1 img{
+    height: 40px;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-left: 30px;
+    
+
+}
+.foto2 img{
+    height: 40px;
+    cursor: pointer;
+    
+}
+
